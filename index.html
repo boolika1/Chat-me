@@ -45,7 +45,7 @@
                         <option value="966">Saudi Arabia +966</option>
                         <option value="1"> USA +1</option>
                     </select>
-                    <input type="tel" placeholder="0100 1234 567" id="n" required pattern="[0-9]+">
+                    <input type="tel" placeholder="0100 1234 567" id="n" required pattern="[0-9]+" >
                 </div>
                 <button type="submit" class="btn" id="sub">
                     <i class="fa-solid fa-link"></i>
@@ -391,7 +391,7 @@
             phoneNumber = phoneNumber.substring(1);
         }
         const fullPhoneNumber = countryCode + phoneNumber;
-        finalLink = "https://api.whatsapp.com/send?phone=" + fullPhoneNumber
+        const  finalLink = "https://api.whatsapp.com/send?phone=" + fullPhoneNumber
         document.getElementById("cod").innerHTML =
             `
             <div id="out">
@@ -402,6 +402,7 @@
             </div>
             `
         navigator.clipboard.writeText(finalLink);
+        alert("✅ Link copied to clipboard!")
 
     });
 </script>
