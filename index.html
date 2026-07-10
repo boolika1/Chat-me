@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Caveat:wght@400..700&family=DynaPuff:wght@400..700&family=Montenegrin+Gothic+One&family=Noto+Naskh+Arabic:wght@400..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat me</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="headerContainer">
+        <div class="header">
+            <a href="./index.html" class="logo">
+                <img src="./chat_me_logo.png" alt="logo">
+            </a>
+            <div class="headerLinks">
+
+                <a href="https://wa.link/twiid2">Chat me</a>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div>
+            <h2>Create a WhatsApp link</h2>
+            <p>Convert your WhatsApp number into an instant communication link so people can start chatting with you
+                easily
+                with just one click</p>
+        </div>
+        <!-- FORM  -->
+        <div class="formContainer">
+            <form id="for">
+                <h1>Enter your WhatsApp number</h1>
+                <div class="ingr">
+                    <select class="opt">
+                        <option value="20">Egypt +20</option>
+                        <option value="971">UAE +971</option>
+                        <option value="966">Saudi Arabia +966</option>
+                        <option value="1"> USA +1</option>
+                    </select>
+                    <input type="tel" placeholder="0100 1234 567" id="n" required pattern="[0-9]+">
+                </div>
+                <button type="submit" class="btn" id="sub">
+                    <i class="fa-solid fa-link"></i>
+                    Create a link
+                </button>
+            </form>
+        </div>
+
+        <div id="cod"></div>
+    </section>
+    <section class="benefits-section">
+        <h2 class="title">Benefits of having a link</h2>
+
+        <div class="cards-grid">
+            <!-- الكارت الأول -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-link"></i>
+                </div>
+                <h3>Share Link</h3>
+                <p>Convert your WhatsApp number into a shareable direct link for all social media platforms.</p>
+            </div>
+
+            <!-- الكارت الثاني -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3>Free Service</h3>
+                <p>Enjoy a free service that meets the needs of individuals and businesses professionally.</p>
+            </div>
+
+            <!-- الكارت الثالث -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <h3>Special link</h3>
+                <p>A special link containing your phone number for easy access to you via WhatsApp with one click.</p>
+            </div>
+
+            <!-- الكارت الرابع -->
+            <div class="benefit-card">
+                <div class="icon-container">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h3>Instant chat</h3>
+                <p>Communicate with clients directly via WhatsApp without the need to share your personal number.</p>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER  -->
+    <div class="footerContainer">
+        <div class="footer">
+            All rights reserved to Chat me &copy; 2026
+        </div>
+</body>
+<style>
+    body {
+        margin: 0%;
+        padding: 0%;
+        font-family: "caveat", system-ui;
+    }
+
+    .benefits-section {
+        padding: 20px;
+    }
+
+    .title {
+        text-align: center;
+        color: #000000;
+
+    }
+
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+
+    .benefit-card {
+        background: linear-gradient(180deg, #ffffff 0%, #00ff7746 100%);
+        border-radius: 0 100px 0 100px;
+        padding: 35px;
+        text-align: center;
+        transition: transform 0.3s;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .benefit-card:hover {
+        transform: translateY(-5px);
+    }
+
+
+    .icon-container i {
+        color: #01622e;
+    }
+
+    .benefit-card h3 {
+        margin: -5px;
+
+        color: #000000;
+    }
+
+    .benefit-card p {
+        line-height: 1.5;
+        color: #666;
+    }
+
+    #cod {
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        width: 50% auto;
+        text-align: center;
+
+    }
+
+    #out {
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        background-color: #00ff7746;
+        border: none;
+        border-radius: 0 100px 0 100px;
+        height: 10vh;
+        color: #000000;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #bg {
+        justify-content: space-between;
+        display: flex;
+        list-style: none;
+        outline: none;
+        border: none;
+        border-radius: 0 100px 0 100px;
+        background-color: #ffffff;
+        color: #000000;
+        overflow: hidden;
+        text-decoration: none;
+        width: 90%;
+    }
+
+    .header {
+        height: 20vh;
+        border-radius: 0 100px 0 100px;
+        background-color: #01622e;
+        color: #000000;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+    }
+
+    .headerLinks {
+        width: 40%;
+    }
+
+    .headerLinks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
+
+    .headerLinks a {
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px 15px;
+        border-radius: 0 100px 0 100px;
+        transition: .3s;
+    }
+
+    .headerLinks a:hover {
+        background-color: #00ff7746;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .footerContainer {
+        background-color: #01622e;
+        height: 20vh;
+        border-radius: 0 100px 0 100px;
+        margin-top: 10%;
+        padding: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+
+    }
+
+
+    .formContainer {
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        padding: 10px;
+    }
+
+    .formContainer form {
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+        padding: 10px 40px 40px 40px;
+        background-color: #00ff7746;
+        align-items: center;
+        border-radius: 0 100px 0 100px;
+    }
+
+    h1 {
+        justify-items: left;
+
+    }
+
+    option {
+        background-color: #01622e;
+        color: #fff;
+    }
+
+    .formContainer form input {
+        outline: none;
+        border: none;
+
+        padding-left: 20%;
+        border-radius: 0 100px 0 100px;
+        width: 70%;
+        height: 10vh;
+    }
+
+    #link {
+        list-style: none;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        outline: none;
+        border: none;
+        border-radius: 0 100px 0 100px;
+        width: 100%;
+
+        background-color: #ffffff;
+        color: #000000;
+        text-decoration: none;
+
+    }
+
+    .btnc {
+
+        width: 30%;
+        padding: 10px;
+        border: none;
+        border-radius: 0 100px 0 100px;
+        background-color: #01622e;
+        color: #fff;
+        transition: .3s;
+        display: flex;
+    }
+
+    .btnc:hover {
+        background-color: #03bc59;
+    }
+
+    .opt {
+        list-style: none;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        outline: none;
+        border: none;
+        border-radius: 0 100px 0 100px;
+        background-color: #ffffff;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    option {
+
+        outline: none;
+        border: none;
+
+        padding-left: 3%;
+        border-radius: 0 100px 0 100px;
+        ;
+        width: 50%;
+        height: 10vh;
+    }
+
+    .ingr {
+        display: flex;
+        list-style: none;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        outline: none;
+        border: none;
+
+        border-radius: 0 100px 0 100px;
+        width: 100%;
+        height: 10vh;
+        background-color: #ffffff;
+        color: #000000;
+        overflow: hidden;
+        text-decoration: none;
+    }
+
+    .btn {
+        margin-top: 20px;
+        width: 100%;
+        height: 10vh;
+        border: none;
+        border-radius: 0 100px 0 100px;
+        background-color: #01622e;
+        color: #fff;
+        transition: .3s;
+    }
+
+    .btn:hover {
+        background-color: #13aa13;
+        cursor: pointer;
+    }
+</style>
+<script>
+    const whatsappForm = document.getElementById('for');
+    const countrySelect = document.querySelector('.opt');
+    const phoneInput = document.getElementById('n');
+
+    whatsappForm.addEventListener('submit', async (e) => {
+        e.preventDefault(); // منع الصفحة من الريفرش
+
+        const countryCode = countrySelect.value;
+        let phoneNumber = phoneInput.value.trim();
+
+        if (phoneNumber.startsWith('0')) {
+            phoneNumber = phoneNumber.substring(1);
+        }
+        const fullPhoneNumber = countryCode + phoneNumber;
+        finalLink = "https://api.whatsapp.com/send?phone=" + fullPhoneNumber
+        document.getElementById("cod").innerHTML =
+            `
+            <div id="out">
+                <div id="bg">
+                    <a id="link">${finalLink}</a>
+                    <button class="btnc"><a href="${finalLink}" id="link">Go chat</a></button>
+                </div>
+            </div>
+            `
+        navigator.clipboard.writeText(finalLink);
+
+    });
+</script>
+
+</html>
